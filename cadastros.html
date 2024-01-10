@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Diego Camargo">
+	<meta name="description" content="Sistema Organização de Livros">
+	<meta name="keywords" content="biblioteca, livraria, posto de livros, store, conhecimento, rio grande do sul">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/logo.png">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Acervo Vinha De Luz</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastro</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cadastros.html">Cadastros</a></li>
+                <li><a href="pesquisas.html">Consultas</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section id="livros">
+        <h2>Cadastro de Livros</h2>
+        <form action="/salvar-livro" method="post">
+            <label for="tituloLivro">Título do Livro:</label>
+            <input type="text" id="tituloLivro" name="tituloLivro"><br><br>
+
+            <label for="autorLivro">Autor do Livro:</label>
+            <input type="text" id="autorLivro" name="autorLivro"><br><br>
+
+            <label for="anoPublicacao">Ano de Publicação:</label>
+            <input type="number" id="anoPublicacao" name="anoPublicacao"><br><br>
+
+            <input type="submit" value="Cadastrar Livro">
+        </form>
+    </section>
+
+    <section id="usuarios">
+        <h2>Cadastro de Usuários</h2>
+        <form action="/salvar-usuario" method="post">
+            <label for="nomeUsuario">Nome do Usuário:</label>
+            <input type="text" id="nomeUsuario" name="nomeUsuario"><br><br>
+
+            <label for="emailUsuario">E-mail do Usuário:</label>
+            <input type="email" id="emailUsuario" name="emailUsuario"><br><br>
+
+            <input type="submit" value="Cadastrar Usuário">
+        </form>
+    </section>
+
+    <section id="emprestimos">
+        <h2>Empréstimos</h2>
+        <form action="/realizar-emprestimo" method="post">
+            <label for="livroEmprestimo">Livro:</label>
+            <select id="livroEmprestimo" name="livroEmprestimo">
+                <option value="livro1">Livro 1</option>
+                <option value="livro2">Livro 2</option>
+                <option value="livro3">Livro 3</option>
+                <!-- Adicione mais opções de livros aqui -->
+            </select><br><br>
+
+            <label for="usuarioEmprestimo">Usuário:</label>
+            <select id="usuarioEmprestimo" name="usuarioEmprestimo">
+                <option value="usuario1">Usuário 1</option>
+                <option value="usuario2">Usuário 2</option>
+                <option value="usuario3">Usuário 3</option>
+                <!-- Adicione mais opções de usuários aqui -->
+            </select><br><br>
+
+            <label for="dataEmprestimo">Data de Empréstimo:</label>
+            <input type="date" id="dataEmprestimo" name="dataEmprestimo"><br><br>
+
+            <label for="dataDevolucao">Data de Devolução:</label>
+            <input type="date" id="dataDevolucao" name="dataDevolucao"><br><br>
+
+            <input type="submit" value="Realizar Empréstimo">
+        </form>
+    </section>
+
+    <footer>
+        <p>Sistema de Biblioteca &copy; 2024</p>
+    </footer>
+</body>
+</html>

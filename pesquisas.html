@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Diego Camargo">
+  <meta name="description" content="Sistema Organização de Livros">
+  <meta name="keywords" content="biblioteca, livraria, posto de livros, store, conhecimento, rio grande do sul">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/logo.png">
+  <link rel="stylesheet" href="estilo.css">
+  <title>Acervo Vinha De Luz</title>
+</head>
+
+<body>
+    <section id="livros">
+        <h2>Consultar Acervo</h2>
+        <form action="/pesquisar-livro" method="get">
+            <label for="tituloPesquisa" class="cursor-pointer"> Pesquisa:</label>
+    
+            
+              
+                <select name="provider" id="provider">
+                    <option value=1>Autor</option>
+                    <option value=2>Título</option>
+                </select>
+                               
+
+
+
+
+
+
+            
+            <input type="text" id="tituloPesquisa" name="tituloPesquisa">
+            <input type="submit" value="Pesquisar">
+        </form>
+        <!-- Aqui você pode exibir os resultados da pesquisa -->
+        <div id="resultadosPesquisaLivros">
+            <!-- Os resultados da pesquisa aparecerão aqui -->
+        </div>
+    </section>
+    
+    
+</body>
+
+</html>
